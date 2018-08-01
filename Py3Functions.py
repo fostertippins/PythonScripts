@@ -78,11 +78,12 @@ def dropDuplicates(sql: SQL_Container,df,table,subset,append):
     df=df.drop_duplicates(subset=subset,keep='first')
     dfToSQL(sql,df,table,append=append,index=False)
 
-def PLC_Connection(host,tags): 
+def PLC_Connection(host,tags):
+    retVal=[]
     with client.connector(host=host) as conn:
             for index,descr,op,reply,status,value in conn.pipeline(
                 operations=client.parse_operations(tags),depth=2):
-                    retVal=value
+                    retVal.append(value)
     return retVal
 
 def sendEmail(recipient,subject,body,attachment):

@@ -1,0 +1,8 @@
+etricc_server = 'S-WN-PLT-DBA05\\Etricc'
+etricc_db = 'Etricc'
+amhs_server = 'Amhs3'
+amhs_db = 'bstone'
+mhcs_server = 'Sql-wn-mhcs'
+mhcs_db = 'GreenTire'
+fosters_server = 'APP1-WN-FOST\\SQLEXPRESS'
+fosters_db = 'FostersDB'
