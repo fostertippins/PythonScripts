@@ -1,7 +1,7 @@
 import time
 import Py3Functions as py3
 import pandas as pd
-
+##
 host = '10.161.2.12'
 msgFrom = "DownTimeAlerts"
 mhcsServer = 'Sql-wn-mhcs'
